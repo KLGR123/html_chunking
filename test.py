@@ -1,5 +1,5 @@
 import os
-from html_chunking import get_html_chunk
+from src.html_chunking import get_html_chunk
 
 if __name__ == '__main__':
     with open('cases/Andrej-Karpathy-YouTube.html', 'r', encoding='utf-8') as file:
