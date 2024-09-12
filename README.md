@@ -1,5 +1,7 @@
 ###  The most practical HTML chunking
 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
+
 Our HTML chunking algorithm operates through a well-structured process that involves several key stages, each tailored to efficiently chunk and merge HTML content while adhering to a token limit. This approach is highly suitable for scenarios where token limitations are critical, and the need for accurate HTML parsing is paramount, especially in tasks like web automation or navigation where HTML content serves as input.
 
 #### Key Features
