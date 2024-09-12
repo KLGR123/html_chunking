@@ -11,17 +11,17 @@ Our HTML chunking algorithm operates through a well-structured process that invo
 #### Usage
 
 ```
-from html_chunking import get_html_chunk
+from html_chunking import get_html_chunks
 
 html = """
 <html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><div class="ytd-searchbox-spt" id="search-container" slot="search-container"></div><div class="ytd-searchbox-spt" id="search-input" slot="search-input"><input autocapitalize="none" autocomplete="off" autocorrect="off" hidden="" id="search" name="search_query" spellcheck="false" tabindex="0" type="text"/></div><svg class="external-icon" id="menu-icon" preserveaspectratio="xMidYMid meet"><g class="yt-icons-ext" id="menu" viewbox="0 0 24 24"><path d="M21,6H3V5h18V6z M21,11H3v1h18V11z M21,17H3v1h18V17z"></path></g></svg><div id="masthead-logo" slot="masthead-logo"><span id="country-code"></span></div><div id="masthead-skeleton-icons" slot="masthead-skeleton"><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div></div></ytd-masthead></ytd-app><link href="https://www.youtube.com/s/desktop/536ed9a8/cssbin/www-main-desktop-watch-page-skeleton.css" name="www-main-desktop-watch-page-skeleton" nonce="2kzKHraEELEaWexSX3PyNg" rel="stylesheet"/></body></html>
 """
 
-merged_chunks = get_html_chunk(html, max_tokens=500, is_clean_html=True, attr_cutoff_len=25)
+merged_chunks = get_html_chunks(html, max_tokens=200, is_clean_html=True, attr_cutoff_len=25)
 merged_chunks
 ```
 
-The `get_html_chunk` function is designed to split and merge HTML content into manageable chunks based on token limits while optionally cleaning and trimming certain attributes. The function is particularly useful when working with language models that impose token limits or when preserving the full HTML structure is crucial.
+The `get_html_chunks` function is designed to split and merge HTML content into manageable chunks based on token limits while optionally cleaning and trimming certain attributes. The function is particularly useful when working with language models that impose token limits or when preserving the full HTML structure is crucial.
 
 **Parameters:**
 
@@ -38,7 +38,7 @@ The output should consists of several HTML chunks, where each chunk contains val
 
     '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><svg class="external-icon" id="menu-icon" preserveaspectratio="xMidYMid meet"><g class="yt-icons-ext" id="menu" viewbox="0 0 24 24"><path d="M21,6H3V5h18V6z M21,11H3v"></path></g></svg><div id="masthead-logo" slot="masthead-logo"><span id="country-code"></span></div></ytd-masthead></ytd-app></body></html>', 
     
-    '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><div id="masthead-skeleton-icons" slot="masthead-skeleton"><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div></div></ytd-masthead></ytd-app><link href="https://www.youtube.com/s" name="www-main-desktop-watch-page-skeleton" nonce="2kzKHraEELEaWexSX3PyNg" rel="stylesheet"/></body></html>'
+    '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><div id="masthead-skeleton-icons" slot="masthead-skeleton"><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div></div></ytd-masthead></ytd-app><link href="https://www.youtube.com/s..." name="www-main-desktop-watch-page-skeleton" nonce="2kzKHraEELEaWexSX3PyNg" rel="stylesheet"/></body></html>'
 ]
 ```
 

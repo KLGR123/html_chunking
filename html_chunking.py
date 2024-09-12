@@ -43,7 +43,7 @@ def clean_html(html: str, attr_max_len: int = 0) -> str:
     for attr in attr_to_remove:
         for tag in soup.find_all(attrs={attr: True}):
             if attr_max_len and len(tag[attr]) > attr_max_len:
-                tag[attr] = tag[attr][:attr_max_len]
+                tag[attr] = tag[attr][:attr_max_len] + "..."
 
     for element in soup.find_all(attrs={"aria-hidden": "true"}):
         removed_content.append(element.get_text())
@@ -158,7 +158,7 @@ def merge_html_chunks(html_chunks, k: int):
     return merged_chunks
 
 
-def get_html_chunk(html: str, max_tokens: int, is_clean_html: bool = True, attr_cutoff_len: int = 40) -> list:
+def get_html_chunks(html: str, max_tokens: int, is_clean_html: bool = True, attr_cutoff_len: int = 40) -> list:
     html, removed = clean_html(html, attr_cutoff_len) if is_clean_html else html
     chunks = split_html_by_dom(html, max_token=max_tokens)
     chunks = [chunk['content'] for chunk in chunks]
