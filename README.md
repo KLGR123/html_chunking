@@ -1,5 +1,7 @@
 ###  The most practical HTML chunking
 
+![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
+
 Our HTML chunking algorithm operates through a well-structured process that involves several key stages, each tailored to efficiently chunk and merge HTML content while adhering to a token limit. This approach is highly suitable for scenarios where token limitations are critical, and the need for accurate HTML parsing is paramount, especially in tasks like web automation or navigation where HTML content serves as input.
 
 #### Key Features
@@ -35,7 +37,6 @@ The output should consists of several HTML chunks, where each chunk contains val
 ```
 [
     '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><div class="ytd-searchbox-spt" id="search-container" slot="search-container"></div><div class="ytd-searchbox-spt" id="search-input" slot="search-input"><input autocapitalize="none" autocomplete="off" autocorrect="off" hidden="" id="search" name="search_query" spellcheck="false" tabindex="0" type="text"/></div></ytd-masthead></ytd-app></body></html>', 
-
     '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><svg class="external-icon" id="menu-icon" preserveaspectratio="xMidYMid meet"><g class="yt-icons-ext" id="menu" viewbox="0 0 24 24"><path d="M21,6H3V5h18V6z M21,11H3v"></path></g></svg><div id="masthead-logo" slot="masthead-logo"><span id="country-code"></span></div></ytd-masthead></ytd-app></body></html>', 
     
     '<html darker-dark-theme="" darker-dark-theme-deprecate="" lang="en" style="font-size: 10px;font-family: Roboto, Arial, sans-serif;" system-icons="" typography="" typography-spacing=""><body><ytd-app><ytd-masthead class="shell" id="masthead" logo-type="YOUTUBE_LOGO" slot="masthead"><div id="masthead-skeleton-icons" slot="masthead-skeleton"><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div><div class="masthead-skeleton-icon"></div></div></ytd-masthead></ytd-app><link href="https://www.youtube.com/s..." name="www-main-desktop-watch-page-skeleton" nonce="2kzKHraEELEaWexSX3PyNg" rel="stylesheet"/></body></html>'
