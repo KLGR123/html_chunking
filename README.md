@@ -1,4 +1,4 @@
-###  The most practical HTML chunking
+###  The most practical HTML chunking 🍽️
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
 
@@ -58,3 +58,21 @@ The output should consists of several HTML chunks, where each chunk contains val
 If you are interested in collaborating with us on this project or have any questions, please feel free to reach out to us. We are open to discussing potential applications, data sharing, and other opportunities for collaboration.
 
 Find Jiarun Liu on his [Github](https://github.com/KLGR123).
+
+
+#### Citation
+
+If you find this project useful, please cite
+
+```latex
+@misc{jasper2024htmlchunking,
+  author = {Jiarun Liu},
+  title = {HTML Chunking Algorithm},
+  year = {2024},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/KLGR123/html_chunking}},
+}
+```
+
+
