@@ -1,4 +1,4 @@
-###  The most practical HTML chunking 🍽️
+<img width="830" height="456" alt="image" src="https://github.com/user-attachments/assets/77bee9da-48f4-4d6b-987d-e0bb69c70f9a" />###  The most practical HTML chunking 🍽️
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
 
@@ -74,5 +74,7 @@ If you find this project useful, please cite
   howpublished = {\url{https://github.com/KLGR123/html_chunking}},
 }
 ```
+
+Cited by Jain A, Aggarwal P, Saladi A. [AutoChunker: Structured text chunking and its evaluation](https://link_to_the_paper). Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track). 2025: 983-995.
 
 
