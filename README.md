@@ -1,4 +1,4 @@
-<img width="830" height="456" alt="image" src="https://github.com/user-attachments/assets/77bee9da-48f4-4d6b-987d-e0bb69c70f9a" />###  The most practical HTML chunking 🍽️
+##  The most practical HTML chunking 🍽️
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
 
