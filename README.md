@@ -6,7 +6,7 @@ Cited by [AutoChunker: Structured text chunking and its evaluation](https://link
 ```bibtex
 @inproceedings{jain2025autochunker,
   title={AutoChunker: Structured text chunking and its evaluation},
-  author={Jain, A. and Aggarwal, P. and Saladi, A�
+  author={Jain, A. and Aggarwal, P. and Saladi, A
   booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)},
   year={2025},
   pages={983--995}
