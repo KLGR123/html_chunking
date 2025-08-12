@@ -2,6 +2,17 @@
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=plastic&logo=python&logoColor=white)
 
+Cited by [AutoChunker: Structured text chunking and its evaluation](https://link_to_the_paper) 🎉.
+```bibtex
+@inproceedings{jain2025autochunker,
+  title={AutoChunker: Structured text chunking and its evaluation},
+  author={Jain, A. and Aggarwal, P. and Saladi, A�
+  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)},
+  year={2025},
+  pages={983--995}
+}
+```
+
 Our HTML chunking algorithm operates through a well-structured process that involves several key stages, each tailored to efficiently chunk and merge HTML content while adhering to a token limit. This approach is highly suitable for scenarios where token limitations are critical, and the need for accurate HTML parsing is paramount, especially in tasks like web automation or navigation where HTML content serves as input.
 
 #### Key Features
@@ -72,17 +83,6 @@ If you find this project useful, please cite
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/KLGR123/html_chunking}},
-}
-```
-
-Cited by [AutoChunker: Structured text chunking and its evaluation](https://link_to_the_paper).
-```bibtex
-@inproceedings{jain2025autochunker,
-  title={AutoChunker: Structured text chunking and its evaluation},
-  author={Jain, A. and Aggarwal, P. and Saladi, A.},
-  booktitle={Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 6: Industry Track)},
-  year={2025},
-  pages={983--995}
 }
 ```
 
